@@ -1,12 +1,12 @@
-import { sum } from "./sum.js";
+import { divideCount } from "./sum.js";
 
 // jest docs for expect "matchers"
 // https://jestjs.io/docs/expect
 
-test("adds 1 + 2 to equal 3", () => {
-    expect(sum(1, 2)).toBe(3);
+test("divisible by 2", (30) => {
+    expect(divideCount(30)).toBe(1);
 });
 
-test("adds 10 + 20 to equal 30", () => {
-    expect(sum(10, 20)).toBe(30);
+test("divisible by 2", (20) => {
+    expect(divideCount(20)).toBe(2);
 });
